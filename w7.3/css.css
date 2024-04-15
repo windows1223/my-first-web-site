@@ -1,0 +1,136 @@
+h1{
+    font-size: 50px;
+    text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0px;
+  padding: 0px;
+  }
+  
+  #grid ol{
+    border-right: 1px solid gray;
+    width: 150px;
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  body{
+    margin: 0px;
+  }
+  
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+
+  img{padding-left: 25px;}
+  
+  @media(min-width: 1px) and (max-width: 767px){
+    #grid {
+      display: block;
+    }
+    h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin: 0px;
+        padding: 20px;
+      color: red;
+    }
+    ol {
+        border-right: 1px solid gray;
+        width: 150px;
+        margin: 0px;
+        padding: 20px;
+      }
+      
+      body {
+        margin: 0px;
+      }
+      
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      p {
+        color: red;
+      }
+      #grid ol {
+        border-right: none;
+      }
+      h1 {
+        border-bottom: none;
+      }
+      
+  }
+  
+  
+    @media(min-width: 768px) and (max-width: 1024px){
+    #grid {
+      display: block;
+    }
+    h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin: 0px;
+        padding: 20px;
+      color: blue;
+    }
+    ol {
+        border-right: 1px solid gray;
+        width: 150px;
+        margin: 0px;
+        padding: 20px;
+      }
+      
+      body {
+        margin: 0px;
+      }
+      
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      p{
+
+        color: blueviolet;
+      }
+
+
+      
+    }
+  
+  
+    @media(min-width: 1025px) and (max-width: 1440px){
+    #grid {
+      display: block;
+    }
+    h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin: 0px;
+        padding: 20px;
+      color: brown;
+    }
+    ol {
+        border-right: 1px solid gray;
+        width: 150px;
+        margin: 0px;
+        padding: 20px;
+      }
+      
+      body {
+        margin: 0px;
+      }
+      
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      p{color: aqua;}
+    }
+  
+  
+  
+  
