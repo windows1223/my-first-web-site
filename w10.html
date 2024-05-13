@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Night/Day Mode</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    div {
+      padding: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  
+  <div>
+    <p>This is the main content area of the website.</p>
+    <p>You can toggle between day and night mode by clicking the button below.</p>
+  </div>
+  
+  <br>
+  
+  <input id="night_day2" type="button" value="day" onclick="
+    var target = document.querySelector('body');
+    if(this.value == 'day'){
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      document.querySelector('div').style.fontSize = '16px';
+      document.querySelector('div').style.border = 'none';
+      this.value = 'night';
+    } else {
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      document.querySelector('div').style.fontSize = '24px';
+      document.querySelector('div').style.border = '2px solid white';
+      this.value = 'day';
+    }
+  "/>
+</body>
+</html>
