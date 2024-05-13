@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>이름과 그림 출력 페이지</title>
+</head>
+<body>
+  <h1>이름과 그림 목록</h1>
+  <ul>
+    <script>
+      let nameList = ['삼육대학교', '상명대학교', '서울대학교', '성공회대학교', '성균관대학교'];
+      let imgList = ['삼육대학교.jpg', '상명대학교.jpg', '서울대학교.jpg', '성공회대학교.jpg', '성균관대학교.jpg'];
+      let linkList = ['https://www.syu.ac.kr/', 'https://www.smu.ac.kr/kor/', 'https://www.snu.ac.kr/', 'https://www.skhu.ac.kr/skhu/index.do', 'https://www.skku.edu/skku/'];
+
+      let i = 0;
+      while (i < nameList.length) {
+        document.write('<li><a href="' + linkList[i] + '" target="_blank">' + nameList[i] + '<br><img src="' + imgList[i] + '" alt="' + nameList[i] + '"></a></li>');
+        i++;
+      }
+    </script>
+  </ul>
+</body>
+</html>
